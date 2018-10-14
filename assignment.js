@@ -82,22 +82,39 @@ const median = (arr) => {
 
 // Question 5:
 
-const repeat = (str, numberOfTimes) => {
-  // return str.repeat(numberOfTimes);
-  //
-  // if (!numberOfTimes) {
-  //   return str.repeat(2);
-  // }
-
-  typeof numberOfTimes === 'number' ? numberOfTimes : numberOfTimes === 2;
+const repeat = (str, numberOfTimes = 2) => {
 
   return str.repeat(numberOfTimes);
 
 }
-// console.log(repeat("Hello"))
+// console.log(repeat("Hello", 6))
+
+
+// ** Will have to ask about these last two later. ** //
 
 // Question 6:
 
-
+// const sum = (arr) => {
+//   let sum = 0;
+//   for (i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+//   return sum;
+// }
+// console.log(sum([2, 3, 4, 5]))
 
 // Question 7:
+
+// const add5 = (num) => {
+//   return num + 5;
+// }
+//
+// const add9 = (num) => {
+//   return num + 9;
+// }
+//
+// const adder = (num) => {
+//   return add5 + add9;
+//
+// }
+// console.log(adder(5))
