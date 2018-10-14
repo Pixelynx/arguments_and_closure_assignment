@@ -105,16 +105,16 @@ const repeat = (str, numberOfTimes = 2) => {
 
 // Question 7:
 
-// const add5 = (num) => {
-//   return num + 5;
-// }
-//
-// const add9 = (num) => {
-//   return num + 9;
-// }
-//
-// const adder = (num) => {
-//   return add5 + add9;
-//
-// }
+const add5 = (num) => {
+  return num + 5;
+}
+
+const add9 = (add5) => {
+  return add5 + 9;
+}
+
+const adder = (num) => {
+  return add5(num) + add9(num);
+
+}
 // console.log(adder(5))
