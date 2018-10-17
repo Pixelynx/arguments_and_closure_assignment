@@ -90,18 +90,19 @@ const repeat = (str, numberOfTimes = 2) => {
 // console.log(repeat("Hello", 6))
 
 
-// ** Will have to ask about these last two later. ** //
-
 // Question 6:
 
-// const sum = (arr) => {
-//   let sum = 0;
-//   for (i = 0; i < arr.length; i++) {
-//     sum += arr[i];
-//   }
-//   return sum;
-// }
-// console.log(sum([2, 3, 4, 5]))
+const sum = (...arr) => {
+  let result = 0
+
+  for (let i = 0; i < arr.length; i++) {
+      result += arr[i];
+  }
+  return result;
+
+}
+console.log(sum(2, 3, 4, 5))
+
 
 // Question 7:
 
@@ -109,12 +110,14 @@ const add5 = (num) => {
   return num + 5;
 }
 
-const add9 = (add5) => {
-  return add5 + 9;
+const add9 = (num) => {
+  return num + 9;
 }
 
 const adder = (num) => {
-  return add5(num) + add9(num);
+  let plus5 = add5(num);
+  let plus9 = add9(plus5);
+  return (plus5, plus9);
 
 }
-// console.log(adder(5))
+// console.log(adder(5));
